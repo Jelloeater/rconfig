@@ -97,7 +97,7 @@ if($update->checkForUpdateFile($updateFile)){
 		$log->Info("Could not remove rConfig update files - (File: " . $_SERVER['PHP_SELF'] . ")");;
 	}
 
-	// remove rconfig/www/install directory as should already be remove for upgrade
+	// remove rconfig/www/install directory as should already be removed for upgrade
 	$installDir = '/home/rconfig/www/install/';
 	if(is_dir($installDir)){
 		rrmdir($installDir);
